@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesto Recipes</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(4, 159, 108) 0%,
+          rgb(194, 254, 113) 90.1%
+        );
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        color: #fff;
+        border: #fff;
+        border-style: dashed;
+        padding: 20px;
+        margin: 50px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: lighter;
+        color: #fff;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+        max-height: 70%;
+        border-radius: 15%;
+      }
+      .introduction {
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        line-height: 25px;
+        padding: 20px 30px;
+      }
+      .recipe {
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bolder;
+        padding: 20px 30px;
+        color: #fff;
+      }
+      .information {
+        font-family: "Courier New", Courier, monospace;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+      }
+      .information:hover {
+        text-decoration: underline;
+        color: gray;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #10a56d;
+        color: #ffff;
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bolder;
+        transition: all 200ms ease-in-out;
+        box-shadow: 10px 10px 10px #2f775c;
+      }
+      button:hover {
+        cursor: grab;
+        background-color: #11d68a;
+        color: #2f775c;
+        font-size: 22px;
+      }
+      .builder {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 10px;
+      }
+      .linkedin {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 10px;
+        text-decoration: none;
+        color: black;
+      }
+      .linkedin:hover {
+        text-decoration: underline;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><em>The Best Pesto Recipes</em></h1>
+    <h2>Welcome to the heaven of pesto creation, dear fellow pasta lover!</h2>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/752/original/basilikum-pesto-default.jpg?1665161694"
+      alt="Pesto making"
+    />
+    <br />
+    <p class="introduction">
+      Pesto is thought to have <strong>two predecessors </strong>in ancient
+      times, going back as far as the Roman age. The
+      <strong>ancient Romans </strong>used to eat a similar paste called
+      moretum, which was made by
+      <strong>
+        crushing garlic, salt, cheese, herbs, olive oil, and vinegar </strong
+      >(and sometimes pine nuts) together. The use of this paste in the Roman
+      cuisine is mentioned in the Appendix Vergiliana, an ancient collection of
+      poems in which the author details the preparation of moretum. <br /><br />
+      During the <strong>Middle Ages</strong>, a popular sauce in the
+      <strong>Genoan cuisine </strong>was agliata, which was basically a
+      <strong>mash of garlic and walnuts</strong>, as garlic was a staple in the
+      nutrition of Ligurians, especially for the seafarers. The introduction of
+      basil, the main ingredient of modern pesto, occurred in more recent times
+      and is first documented only in the mid-19th century, when gastronomist
+      Giovanni Battista Ratto published his book
+      <strong>La Cuciniera Genovese</strong> in 1863.
+    </p>
+    <p class="recipe">
+      Apart from the classic genovese pesto, there are many more recipes in
+      modern times. <br /><br /><em>We want to explore them all!</em>
+    </p>
+    <a
+      class="information"
+      href="https://en.wikipedia.org/wiki/Pesto"
+      ;
+      target="_blank"
+      ;
+    >
+      Learn more about Pesto here.
+    </a>
+    <br />
+    <button>Get more recipe ideas!</button>
+    <hr />
+    <p class="builder">
+      This page was built by
+      <span
+        ><a
+          class="linkedin"
+          href="https://www.linkedin.com/in/alena-mohsenyar/"
+          ;
+          target="_blank"
+          ;
+        >
+          Alena Mohsenyar
+        </a></span
+      >
+    </p>
+    <script>
+      function ideas() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email adress?");
+        if (name.length > 0 && email.length > 0)
+          alert("Thanks " + name + "! We will be in touch!");
+        else
+          alert(
+            "Thank you for your interest, fellow pasta lover! Enter your details to get more recipe ideas."
+          );
+      }
+
+      let recipeButton = document.querySelector("Button");
+      recipeButton.addEventListener("click", ideas);
+    </script>
+  </body>
+</html>
